@@ -1,1 +1,1 @@
-<p style="font-size: 20px; font-weight: bold;">Position & Flex & Grid & Image adjustment</p>
+<p style="font-size: 20px;"><b>Position & Flex & Grid & Image adjustment</b></p>
