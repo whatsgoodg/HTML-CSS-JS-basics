@@ -1,0 +1,114 @@
+html {
+    /*css webkit css 변수설정 & 사용 예시*/
+    /*root element이니 여기다 변수명을 사용해줘야함 중첩된 요소들은 이 변수들을 사용할 수 있음*/
+    --color-grey-100: rgb(236, 236, 236);
+    --size-1: 18px; 
+  
+    background-color: var(--color-grey-100);
+
+
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+  }
+  
+  .card-container {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 3px 3px 10px rgb(201, 200, 200);
+  }
+
+  /*transform & transition*/
+  .card-container:hover {
+    transform: scale(1.20); /*컨테이너에 마우스를 올리면 1.2배로 커짐*/
+    /*transform: rotate(180deg) /* 2pi 돌려줌 */
+    }
+
+    /*transition은 property가 변경되는데에 시간이 걸리게끔 해놓음.
+    기본 선택자로 들어가야함 수도x*/
+    /* 포맷: trainsition: property duration timing function delay
+    property(바뀌는 속성)
+    duration(앞에 쓰인 property 변화의 지속시간) 
+    timing function(ease-out: 전환이 빠르게 시작하고 느리게 끝나게 하는 용도 ease-in은 반대) 
+    delay(transition의 시작 지연시간)*/
+    .card-container {
+      transition: transform 2s ease-out 2s;
+    }   
+  
+  h1 {
+    color: rgb(58, 58, 58);
+    text-align: left;
+    padding: 30px 50px 0px 50px;
+    margin: 10px 0;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+  }
+  
+  .card-info {
+    color: rgb(134, 134, 134);
+    text-align: left;
+    padding: 0 50px;
+    margin: 10px 0 30px 0;
+  }
+  
+  .price {
+    color: rgb(41, 41, 41);
+    background-color: rgb(167, 226, 255);
+    text-align: center;
+    margin: 30px auto 10px auto;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .price-info {
+    color: rgb(134, 134, 134);
+    text-align: center;
+    margin: 10px 0 30px 0;
+    padding: 0 50px;
+  }
+  
+  .sub-details {
+    width: 300px;
+    margin: 30px 50px;
+  }
+  
+  
+  .sub-feature {
+    display: flex;
+  }
+  
+  .icon {
+    display: flex;
+    width: 15px;
+  }
+  
+  .sub-feature-text {
+    color: rgb(58, 58, 58);
+    padding: 2px;
+    margin: 5px;   
+  }
+  
+  
+  .button-container {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+  
+  .button {
+    color: rgb(0, 170, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    margin: 0 0 30px 0;
+    border: 2px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .button:hover {
+    color: white;
+    background-color: rgb(0, 170, 255);
+    border: 2px solid rgb(255, 255, 255);
+  }
