@@ -1,1 +1,1 @@
-<h1 style="font-size: 20px;">Position & flex & grid basics</h1>
+<p style="font-size: 20px; font-weight: bold;">Position & Flex & Grid & Image adjustment</p>
