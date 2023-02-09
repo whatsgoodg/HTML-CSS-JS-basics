@@ -1,3 +1,4 @@
+<h1 style="font-size: 20px">Basics</h1>
 ```js
 //Get some element
 let some_element;
