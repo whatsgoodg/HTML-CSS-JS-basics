@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ECF9FD;
+}
+
+label, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    width: 37rem;
+    padding: 0.5rem 1rem 1.5rem 1rem;
+    text-align: left;
+    background-color: #F4F8FE;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+    border: 2px solid #C7CBD1;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+#username, #useremail, #usernumber {
+    margin-bottom: 0.5rem;
+    height: 1.8rem;
+}
+
+textarea {
+    margin-bottom: 1rem;
+}
+
+select {
+    height: 2rem;
+    border: 2px solid #C7CBD1;
+    border-radius: 3px;
+}
+
+#radios {
+    margin-bottom: 0.7rem;
+}
+
+#thru-call, #thru-email, #thru-dont, #useragree {
+    margin-right: 0.5rem;
+}
+
+.replying, .acceptance {
+    display: flex;
+
+}
+
+.replying input, .acceptance input {
+    width: auto;
+}
+
+.acceptance {
+    margin-bottom: 1rem;
+}
+
+#buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reset {
+    font-size: 1rem;
+    display: block;
+    background-color: #F4F8FE;
+    border: 1px solid #41454B;
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    color: #25283A;
+    font-weight: 540;
+    margin-right: 0.3rem;
+}
+
+#submit {
+    font-size: 1rem;
+    display: block;
+    background-color: #25283A;
+    border: 1px solid #41454B;
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    color: white;
+    font-weight: 540;
+    text-decoration: none;
+    margin-right: 0.3rem;
+}
