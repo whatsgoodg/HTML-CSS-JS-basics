@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main> <!--(1)section -> (2)div or list로 비슷한 구간을 엮을 수 있음.-->
+        <form action="/user-contact" method="POST">
+            <h2>How can we help you?</h2>
+            <label for="username">Your name</label>
+            <input type="text" name="user-name" id="username" required />
+            <label for="useremail">Your E-Mail Address</label>
+            <input type="email" name="user-email" id="useremail" required />
+            <label for="usernumber">Your Phone Number</label>
+            <input type="text" name="user-number" id="usernumber" required maxlength="11"/>
+            <label for="usertext">Your Message</label>
+            <label for="usertext"></label>
+            <textarea name="user-text" id="usertext" cols="30" rows="8" style="resize: none;"></textarea>
+            <label for="howfound">How did you find us?</label>
+            <select name="how-found" id="howfound">
+                <option value="web">Web Search</option>
+                <option value="mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+            </select>
+            <h2>How should we reply?</h2>
+            <div id="radios">
+                <div class="replying">
+                    <input type="radio" name="how-replied" id="thru-call" value="calling"/>
+                    <label for="thru-call">Call me</label>
+                </div>
+                <div class="replying">
+                    <input type="radio" name="how-replied" id="thru-email" value="emailing"/>
+                    <label for="thru-email">Send me an email</label>
+                </div>
+                <div class="replying">
+                    <input type="radio" name="how-replied" id="thru-dont" value="dont"/>
+                    <label for="thru-dont">Don't reply</label>
+                </div>
+            </div>
+            <div class="acceptance">
+                <input type="checkbox" name="user-agree" id="useragree">
+                <label for="useragree">Accept Terms</label>
+            </div>
+            <div id="buttons">
+                <button type="reset" id="reset" >Clear</button>
+                <button type="submit" id="submit" >Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
