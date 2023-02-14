@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <title>HTML Forms</title>
+</head>
+<body>              
+    <form action="/user-data" method="get">
+        <!--label은 input의 의미적 요소, for과 input의 id를 동일하게(optional)-->
+        <label for="username">Your name</label>
+        <input type="text" name="user-name" id="username" required placeholder="Max Schwarz"/> <!--required는 boolean 속성이며 비어있으면 안 된다.-->
+        <!--placeholder: 입력값에 대한 힌트-->
+
+        <label for="usermessage">Your message</label>
+        <textarea name="user-message" id="usermessage" cols="30" rows="10" ></textarea>
+        <!--rows는 8열이 일단 보이는 최대라는 것이다. 그 이후는 스크롤된다.-->
+
+        <label for="usermail">Your email address</label>
+        <input type="email" name="user-email" id="usermail" />
+        <label for="userage">Your age</label>
+        <input type="number" step="1" name="user-age" id="userage" required min="18" max="100"/> <!--step 기본값 1-->
+        <label for="userpassword">Your password</label>
+        <input type="password" name="user-password" id="userpassword" required minlength="7"/>
+        <label for="birthdate">Your birthday</label>
+        <input type="date" id="birthdate" name="user-birthdate" requried min="1921-01-01" max="2003-01-01"/>
+        <hr>
+        <label for="  ">Your favorite color?</label>
+        <select name="" id="">
+            <option value="">Blue</option>
+            <option value="">Black</option>
+            <option value="">Red</option>
+        </select>
+
+        <h2>How should we verify your accoun?</h2>
+        <!--radio는 여러 radiobox 중 하나만 뽑도록 동일한 name을 가져야한다.-->
+        <!--선택된 값을 서버에 전달하기 위해 value 속성을 사용한다. 모든 input에 사용된다.
+        text들은 글자가 value이지만, radio는 미리 지정해야한다. -->
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-text-message" value="text-message" required/> <!--radio all required는 최소 하나 선택-->
+            <label for="verify-text-message">Via text message (SMS)</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone" required/>
+            <label for="verify-phone">Via phone call</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="email" required/>
+            <label for="verify-email">Via an email</label>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html> 
